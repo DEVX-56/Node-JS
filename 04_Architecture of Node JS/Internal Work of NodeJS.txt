@@ -1,0 +1,17 @@
+client ---(req)--->  Server
+
+1. All request go into event queue of server.
+2. Then all request goto event-loop from queue.
+3. When event-loop pick request from queue, the request may be 2 types
+            a. Asynchronous(Non-Blocking)  b. Synchronous(Blocking)
+4. If request is non-blocking then take it from queue and give response to user.
+5. If blocking operation then request goto thread pool, if theres free thread then it will assign to the work and return the result else the waork will wait in thread pool until thread became free.
+
+
+
+*****************************************************************************************
+*         const os = require('os');                                                      *
+*        console.log(os.cpus());   ----> This will print all Thread informaytions        *
+*        console.log(os.cpus().length); ----> This will print the number of thread size  *
+*                                                                                        *
+******************************************************************************************
