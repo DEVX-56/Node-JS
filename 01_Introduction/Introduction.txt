@@ -1,0 +1,8 @@
+////  Here for all folder the 'npm' will be same.
+
+*. Node Js => It's a JavaScript runtime environment. using node js we can run java script outside the browser.
+*. Node environment does not include DOM, Window. here only core functionality included.
+*.  To run any file = node file_name
+*. run (npm init) it will create [packet.json] file.
+*. Declare "start":"node index.js" in package.json and now if we write (npm start) it will run the code.
+*. 
