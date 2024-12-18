@@ -1,0 +1,48 @@
+////                Operation on File using Node JS
+
+*. To perform Operation on files we need a module called fs.
+
+*.                                              To create and write some thing in file
+
+  - fs.writeFileSync('./test.txt', "Hey there     it's rohan");  it's a synchronous way
+    it take two parameter 1. file name with directory 2. What we want to add in the file
+
+  - fs.writeFileAsync('./test.txt', "Hey there     it's rohan");  it's a Asynchronous way  it has three Parameters
+    1. File name with path 2. What we want to add in the file 3. A call back function, if any error occur while creating file it will throw the error  
+
+
+
+*.                                                   To read file 
+
+  - fs.readFileSync("./contacts.txt", "utf-8");          it's a synchronous way [Here we store it in a variable and the featched data store in the variable]
+     it take two parameter 1. file name with directory 2. Encoding type
+
+  - fs.readFile("./contacts.txt", "utf-8",(err, result)=>{      It's a Asynchronous way it take three Parameters [Here no need any variable to store the result]
+        if(err){
+            console.log(err);
+        }
+        else{
+            console.log(result);
+        }
+    });
+    1. File name      2. Encoding type     3. A call back function which has 2 parameter (err, result), if any error occur during file creation it returns error else it prints the result.   
+
+Asynchronous Type methods always expects a call back function.
+
+
+
+*.                                                      Append File
+    In append file method data will be added after. Means theres no change in previous data new data will be added after.
+  - fs.appendFileSync("./contacts.txt", `\nHey there`);  It's synchronous way to append file.....  It takes 2 parameters
+        1. File name    2. Text or some thing which we want to add in the file
+  - fs.appendFile("./contacts.txt", `\nHey there`, ()=>{})  It's Asynchronous way to append file.....  It takes 3 Parameters
+        1. File name    2. Text or some thing which we want to add in the file    3. Call back function 
+
+
+
+*.                                      Delete file
+   To delete file we use unlink 
+  - fs.unlinkSync("./apple.txt"); it takes only one parameter    [Use this to delete any file Synchronous way ]
+    1. File Path
+  - fs.unlink("apple.txt", ()=>{});  it takes 2 parameter   [Use this to delete any file Asynchronous way ]
+    1. File path   2. Callback Function
