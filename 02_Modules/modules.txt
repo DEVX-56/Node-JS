@@ -1,0 +1,3 @@
+*. In JS when we import a function then we also have to export the function from other source.
+*. We can exports multiple function as object.
+*. We can also rename function while exporting.
