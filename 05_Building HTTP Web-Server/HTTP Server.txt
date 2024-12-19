@@ -1,0 +1,3 @@
+*. We need to import (http) module to create http server
+*. This function [ http.createServer()] used to create function, it takes a callback function and inside callback function, it takes 2 parameter (request and response).
+*. To run a server we need port number.
