@@ -1,0 +1,13 @@
+*. URL - Uniforn Resource Locator
+
+https://www.google.com/
+
+- https:// --> It's called protocol. a set of rules that defines how to communicate  with the server.
+- www.google.com --> It's called domain.
+- (/) --> This is Root path or called home page.
+- There's may be different type of path (/about), (/contact-us).
+- There's may be nested path (/project/js_project/1).
+- Query Parameters --> Query paramters are extra information which we can pass with URL.
+
+               [devx.org/about?userid=1&a=2]
+- After (?) extra part called query parameter. 
