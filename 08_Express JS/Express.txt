@@ -1,0 +1,4 @@
+*. In vanilla node js, how we create [http.createServer()] function for server. But using Express js we can build it only importing [express] module.
+*. after importing node module, we declare it in a variable.
+*. Now in this variable we can use different type of request method [get, put, patch...]
+*. When we implement this requests thenit takes two paramaters 1. Route 2. A call back function 
