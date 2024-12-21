@@ -1,0 +1,10 @@
+
+Server <----->  Client
+
+Basically Rest API is a standard for communication between Server and Client.
+- Works in Server, client Architecture.
+- Always follow all HTTP methods [GET, POST, PATCH, PUT, DELETE].
+- If we want to send anything using express JS it's very easy.
+    a. res.send()  ---> Send any response.
+    b. res.json() ---> Send JSON data.
+    c. res.render() --> HTML Render it's a bit faster method, using this we can achive (SSR - Server Side Rendering)

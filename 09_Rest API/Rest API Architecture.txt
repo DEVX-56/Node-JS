@@ -1,0 +1,19 @@
+REST API - JSON DATA
+
+*. GET/users - HTML Document Render.
+   GET/api/users - List all users JSON
+            Dynamic Path Parameters
+    GET/api/users/:id - Get the user with ID 1
+    GET/api/users/2 - Get the user with ID 2
+
+*. POST/api/users - Create new user.
+
+*. PATCH/api/users/id - Edit user with given ID.
+
+*. DELETE/api/users/id - Delete user with given ID.
+
+if there (/api) in route means it will return a JSON data
+either it will return a HTML Data
+
+
+*****params object allows you to capture dynamic values from the URL path.***
