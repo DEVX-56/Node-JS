@@ -1,0 +1,19 @@
+*. Middleware is a software layer that connects applications, databases, and users to an operating system.
+
+*. Client -->--(req)--->-Middleware--->Server
+
+*. Middleware is a function which executes in all req and res.
+iddleware functions are functions that have access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle. The next middleware function is commonly denoted by a variable named next.
+*. We can use multiple middleware.
+
+*. Middleware functions can perform the following tasks:
+- Execute any code.
+- Make changes to the request and the response objects.
+- End the request-response cycle.
+- Call the next middleware function in the stack.
+
+*.    app.use((req, res, next)=>{})
+- req: It refers all the incoming request
+- res: If we want to end the responce in this current communication.
+- next: Next pointing next middleware or actual route if there no next middleware.
+- If we do one request through out this request will be precists.  
