@@ -1,0 +1,6 @@
+HTTP Methods: 
+- GET: Used to get some data from server.
+- POST: Used to send and mutate some data in server.
+- PUT: Used to send data to a server to create/update a resource.
+- PATCH: Used to modify data.
+- DELETE: Used to delete data.
